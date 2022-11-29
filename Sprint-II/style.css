@@ -1,5 +1,5 @@
 body {
-    background-color: #808080;
+    /* background-color: #808080; */
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -7,8 +7,8 @@ body {
     
 }
 .destaque {
-    height: 40%;
-    width: 50%;
+    height: 50%;
+    width: 90%;
     border-radius: 20px;
     overflow: hidden;
     position: absolute;
@@ -44,7 +44,7 @@ input {
 
 .slides {
     display: flex;
-    width: 500%;
+    width: 300%;
     height: 100%;
 }
 
