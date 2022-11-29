@@ -7,14 +7,15 @@ body {
     
 }
 .destaque {
-    height: 520px;
-    width: 935;
+    height: 40%;
+    width: 50%;
     border-radius: 20px;
     overflow: hidden;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    
 }
 
 .navigation {
@@ -58,13 +59,13 @@ input {
 }
 
 #slide1:checked ~ .s1 {
-    margin-left: 33;
+    margin-left: 0;
 
 }
 #slide2:checked ~ .s1 {
-    margin-left: -66%;
+    margin-left: -33.33%;
 }
 #slide3:checked ~ .s1 {
-    margin-left: -99%;
+    margin-left: -66.66%;
 
 }
