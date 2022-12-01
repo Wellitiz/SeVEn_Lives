@@ -13,5 +13,5 @@ Seções e artigos;
 Footer;
 ``` 
 ## Adicionalmente:
-- Inserido elementos CSS em continuação ao desenvolvimento do projeto
+- Inserido elementos **CSS** em continuação ao desenvolvimento do projeto
 
