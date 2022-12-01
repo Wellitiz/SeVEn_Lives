@@ -1,0 +1,50 @@
+.boxmain {
+    background-color: #888686;;
+}
+.boxverde {
+    background-color: #41B48C;
+}
+
+.destaques {
+    display: flex;
+    
+}
+.slides {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    
+}
+
+.boximagens {
+    display: flex;
+    flex-direction: row;
+    padding-top: 25px;
+    padding-left: 15px;
+}
+.boxparagrafos {
+    display: flex;
+    align-items:flex-end;
+}
+.boxpaginas {
+    display: inline-flexbox;
+    align-items: center;
+    min-height: min-content;
+}
+
+.boxsilhuetas {
+    background-color: #41B48C;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.boxredessociais1 {
+    background-color: #888686;
+    margin-top: 100px;
+}
+.boxredessociais2 {
+    background-color: #888686;
+    
+}
