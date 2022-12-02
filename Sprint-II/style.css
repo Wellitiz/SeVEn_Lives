@@ -1,17 +1,28 @@
-body {
-    /* background-color: #808080; */
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    width: 100vw;
+.boxmain {
+    background-color: #888686;;
+}
+.boxverde {
+    background-color: #41B48C;
+}
+
+.destaques {
+    display: flex;
     
 }
+.slides {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    
+}
+/* Nao Mexer nesse CSS, pertence ao SLIDE PRONTO */
 .destaque {
-    height: 50%;
-    width: 90%;
+    height: 15%;
+    width: 25%;
     border-radius: 20px;
     overflow: hidden;
-    position: absolute;
+   position: relative;
+   padding-top: 230px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -68,4 +79,56 @@ input {
 #slide3:checked ~ .s1 {
     margin-left: -66.66%;
 
+}
+
+/* Até AQUI PERTENCE AO SLIDE PRONTO */
+
+
+.boximagens {
+    display: flex;
+    flex-direction: row;
+    padding-top: 5px;
+    padding-left: 15px;
+}
+.boxparagrafos {
+    display: flex;
+    align-items:flex-end;
+}
+.boxpaginas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+   
+}
+.categorias {
+    width: 100px;
+    display: flex;
+    padding-top: 10px;
+    padding:15px;
+
+}
+
+.boxsilhuetas {
+    background-color: #41B48C;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    
+
+}
+
+.boxredessociais1 {
+    background-color: #888686;
+    margin-top: 1px;
+}
+.boxredessociais2 {
+    background-color: #888686;
+    padding-top: 1px;
+}
+h6 {
+    background-color: #888686;
+    display: flex;
+    align-content: center;
+    padding-top: 1px;
 }
