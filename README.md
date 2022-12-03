@@ -1,4 +1,4 @@
-# Repositório do Progeto Integrador Curso PROZ - PortalTech
+# Repositório do Projeto Integrador Curso PROZ - PortalTech
 ## Grupo - 7
 ### Membros do grupo:
 - Izaias Nascimento
