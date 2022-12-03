@@ -1,8 +1,11 @@
 header {
-    background-color: #888686;
+    background-color: rgb(15, 95, 119);
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
 }
 
-body {
+/*body {
     background-color: #808080;
     margin: 0;
     padding: 0;
@@ -10,7 +13,8 @@ body {
     height: 786px;
     
 
-}
+}*/
+/*
 .destaque {
     height: 40%;
     width: 50%;
