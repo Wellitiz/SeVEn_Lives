@@ -1,29 +1,33 @@
-header {
-    background-color: #888686;
+.boxmain {
+    background-color: #888686;;
+}
+.boxverde {
+    background-color: #41B48C;
 }
 
-body {
-    background-color: #808080;
-    margin: 0;
-    padding: 0;
-    width: 1366px;
-    height: 786px;
+.destaques {
+    display: flex;
     
-
 }
+.slides {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    
+}
+/* Nao Mexer nesse CSS, pertence ao SLIDE PRONTO */
 .destaque {
-    height: 40%;
-    width: 50%;
+    height: 15%;
+    width: 25%;
     border-radius: 20px;
     overflow: hidden;
-    position: absolute;
+   position: relative;
+   padding-top: 230px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     
-    
 }
-
 
 .navigation {
     position: absolute;
@@ -76,43 +80,55 @@ input {
     margin-left: -66.66%;
 
 }
-.columsmain {
-display: -webkit-inline-flex;
-width: 1338px;
-height: 300px;
-left: 131px;
-top: 1192px;
-justify-content: center;
-column-gap: 30px;
-}
-.pagecolums {
-    width: 100px;
-    height: auto;
 
-}
+/* Até AQUI PERTENCE AO SLIDE PRONTO */
 
-.divmain {
-    background-color: #888686;
-    padding-top: 0px;
-    width: 1444px;
-    height: 172px;
 
-}
-
-.footersilhuetas {
-    background-color: #41B48C;
-    background-position-x: center;
-   display: flex;
-   padding-left: 8cm;
-   justify-content: center;
-    width: 57%;
-}
-.logorodape {
-   background-color: #888686;
+.boximagens {
     display: flex;
-    width: 30%;
+    flex-direction: row;
+    padding-top: 5px;
+    padding-left: 15px;
 }
-.footerlayout {
-  background-color:#888686;  
-    width: 2%;
+.boxparagrafos {
+    display: flex;
+    align-items:flex-end;
+}
+.boxpaginas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+   
+}
+.categorias {
+    width: 100px;
+    display: flex;
+    padding-top: 10px;
+    padding:15px;
+
+}
+
+.boxsilhuetas {
+    background-color: #41B48C;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    
+
+}
+
+.boxredessociais1 {
+    background-color: #888686;
+    margin-top: 1px;
+}
+.boxredessociais2 {
+    background-color: #888686;
+    padding-top: 1px;
+}
+h6 {
+    background-color: #888686;
+    display: flex;
+    align-content: center;
+    padding-top: 1px;
 }
