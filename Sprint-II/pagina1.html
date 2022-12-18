@@ -4,137 +4,148 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Corpo</title>
+    <link rel="stylesheet" href="style_pag_um.css">
+    <title>SeVEn Lives</title>
 </head>
-
 <body>
-    <!-- Habilita fundo para ver melhor os icones -->
-    <body bgcolor="gray">
-
-    <!-- Cabeçalho da pagina -->
-    <header>
-        <nav>
-            <!-- Imagem da Logo -->
+      <!-- Cabeçalho da pagina -->
+      <div class="boxmain">
+        <div class="boxm1">
             <a href="/Sprint-II/index.html">
-                <img src="/Sprint-II/imagens/PG1/Logo_Seven.png" alt="Logo SeVEn" height="40">
+            <img class="logoum" src="/Sprint-II/imagens/Home/Logo_Seven.png" alt="Logo SeVEn" width="181" height="80px">
             </a>
-            
-            <!-- Botão de pesquisa -->
-            <form>
-                <div>
-                    <label for="pesquisa"></label>
-                    <input type="text" name="pesquisa" placeholder="O que procura?">
+            <header>
+                <!-- Botão de pesquisa -->
+                <form>
+                    <div>
+                        <label for="pesquisa"></label>
+                        <input type="text" name="pesquisa" placeholder="O que procura?">
+                    </div>
+                </form>
+            </header>
+        </div>
+      </div>
+      <div class="boxverde">
+        
+      </div>
+       <!-- Conteudo da Pagina -->
+       <main>
+        <!-- Destaques -->
+        <section>
+            <!-- Estrutura dos slides de destaque -->           
+            <div class="destaque">
+                <div class="slides">
+                    <input type="radio" name="slide" id="slide1" checked>
+                    <input type="radio" name="slide" id="slide2">
+                    <input type="radio" name="slide" id="slide3">
+
+                    <div class="slide s1">
+                        <img src="/Sprint-II/imagens/Home/Des1.png" alt="Homem Correndo" width="55%">
+                    </div>
+
+                    <div class="slide">
+                        <img src="/Sprint-II/imagens/Home/Des2.png" alt="Pessoas orando" width="55%">
+                    </div>
+
+                    <div class="slide">
+                        <img src="/Sprint-II/imagens/Home/Des3.png" alt="Pessoas em uma Festa" width="55%">
+                    </div>  
                 </div>
-            </form>
-        </nav>        
-    </header>
 
-    <!-- Conteudo da Pagina -->
-    <main>
-        <!-- Titulo e foto da matéria -->
-        <header>
-            <h1>Os benefícios da corrida ao ar livre</h1>
-            <div>
-                <figure>
-                    <img src="/Sprint-II/imagens/PG1/Des1.png" alt="" width="90%">
-                    <figcaption>Corra e sinta a liberdade</figcaption>
-                </figure>
+                <div class="navigation">
+                    <label class="bar" for="slide1"></label>
+                    <label class="bar" for="slide2"></label>
+                    <label class="bar" for="slide3"></label>
+                </div>
+            </div>            
+        </section>
+
+        <section>
+            <!-- Estrutura de imagens e textos descrevendo os nossos objetivos -->
+            <aside id="asidedireito">
+                 <div class="boximagens">
+                    <div class="boxparagrafos">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="boximagens">
+                            <img src="/Sprint-II/imagens/Home/Img1.png" alt="" width="5%">
+                        </div>
+
+                        <div class="boxparagrafos">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>    
+                        </div>
+                        <div class="boximagens">
+                            <img src="/Sprint-II/imagens/Home/Img2.png" alt="" width="5%">
+                        </div>
+                        <div class="boxparagrafos">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="boximagens">
+                            <img src="/Sprint-II/imagens/Home/Img3.png" alt="" width="5%">
+                        </div>
+                        <div class="boxparagrafos">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="boximagens">
+                            <img src="/Sprint-II/imagens/Home/Img4.png" alt="" width="5%">
+                        </div>
+                        <div class="boxparagrafos">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="boximagens">
+                            <img src="/Sprint-II/imagens/Home/Img5.png" alt="" width="5%">
+                        </div>
+                    
+                    
+                
+                </div>
+            </aside>
+
+        </section>
+        <section>
+      
+        </section>
+         <!-- Parte inferior da Página -->
+        <footer>
+            <!-- Imagens de silhuetas -->
+            <div class="boxsilhuetasmain">
+                <div class="boxsilhuetas">
+                    <img src="/Sprint-II/imagens/Home/Silhuetas.png" alt=""width="60%">
+                </div>
+            </div>  
+            <div> <!-- Div para logo, tem que usar GRID pra ficar como no figma-->
+                <div class="boxredessociais1">
+                    <img src="/Sprint-II/imagens/Home/Facebook.png" width="30">
+                    <a href="https://www.facebook.com/" target="_blank">SeVEn Facebook</a>
+
+                    <img src="/Sprint-II/imagens/Home/Instagram.png" width="30">
+                    <a href="https://www.instagram.com/" target="_blank">SeVEn Instagram</a>
+
+                    <img src="/Sprint-II/imagens/Home/Twitter.png" width="30">
+                    <a href="https://twitter.com/" target="_blank">SeVEn Twitter</a>
+
+                    <img src="/Sprint-II/imagens/Home/Youtube.png" width="30">
+                    <a href="https://www.youtube.com/" target="_blank">SeVEn Youtube</a>
+                </div>
             </div>
-        </header>
+            <!-- Contato -->
+            <div class="boxredessociais2">
+                <p>(99)99999-999</p>
+                <img src="/Sprint-II/imagens/Home/Telefone.png" alt="" width="30">
+                
+                <p>Seven.Lives@email.com</p>
+                <img src="/Sprint-II/imagens/Home/E-mail.png" alt="" width="30">
 
-        <main>
-            <!-- Materia e fotos da materia -->
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni laborum perferendis impedit rerum sit quisqualom, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, dignissimos dolor molestiae hic neque perferendis atque aut exercitationem, quo ratione ipsum veniam velit id labore quos ullam? Quis, alias itaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima neque totam itaque unde voluptatum quis et harum odio eos? Hic praesentium laudantium magni expedita minima voluptatum itaque dolorem saepe repudiandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae distinctio perferendis facere rem iste cupiditate error, atque ratione. Quibusdam quo similique accusamus at adipisci velit repellat eligendi aut autem tenetur? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis numquam molestiae aspernatur eius, obcaecati nihil ipsa accusamus autem nesciunt natus possimus totam accusantium. Eius facilis aspernatur, sint incidunt culpa officiis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic delectus illo tempora saepe suscipit, iusto, exercitationem inventore voluptatibus molestias, omnis itaque dolore. Assumenda tenetur minus temporibus totam vel dolores laudantium? modi necessitatibus delectus voluptate architecto iusto ipsa placeat animi, cupiditate qui sunt dolore. Assumenda, praesentium?</p>
+                <p>Rua tal, 99 - Bairro - Cidade </p>
+                <img src="/Sprint-II/imagens/Home/Localização.png" alt="" width="30">
 
-            <figure>
-                <img src="/Sprint-II/imagens/PG1/FotoP1-1.png" alt="" width="60%">
-            </figure>
+                <p>(99)99999-999</p>
+                <img src="/Sprint-II/imagens/Home/Whatsapp.png" alt="" width="30">
+            </div>
 
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni laborum perferendis impedit rerum sit quisqualom, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, dignissimos dolor molestiae hic neque perferendis atque aut exercitationem, quo ratione ipsum veniam velit id labore quos ullam? Quis, alias itaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima neque totam itaque unde voluptatum quis et harum odio eos? Hic praesentium laudantium magni expedita minima voluptatum itaque dolorem saepe repudiandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae distinctio perferendis facere rem iste cupiditate error, atque ratione. Quibusdam quo similique accusamus at adipisci velit repellat eligendi aut autem tenetur? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis numquam molestiae aspernatur eius, obcaecati nihil ipsa accusamus autem nesciunt natus possimus totam accusantium. Eius facilis aspernatur, sint incidunt culpa officiis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic delectus illo tempora saepe suscipit, iusto, exercitationem inventore voluptatibus molestias, omnis itaque dolore. Assumenda tenetur minus temporibus totam vel dolores laudantium? modi necessitatibus delectus voluptate architecto iusto ipsa placeat animi, cupiditate qui sunt dolore. Assumenda, praesentium?</p>
-
-            <figure>
-                <img src="/Sprint-II/imagens/PG1/FotoP1-2.png" alt="" width="60%">
-            </figure>
-
-            <p>Lorem ipsum dolor sit amet cto, exercitationem inventore voluptatibus molestias, omnis itaque dolore. Assumenda tenetur minus temporibus totam vel dolores laudantium? modi necessitatibus delectus voluptate architecto iusto ipsa placeat animi, cupiditate qui sunt dolore. Assumenda, praesentium?</p>
-
-        </main>
-
-        <!-- Fotos e textos da lateral da pagina -->
-        <aside>
-            <img src="/Sprint-II/imagens/PG1/Img1.png" alt="" width="20%">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quibusdam suscipit mollitia nulla. Earum, quam enim quae numquam nesciunt reprehenderit architecto ipsum corporis ducimus libero tempore qui aliquid quisquam dolorem.</p>
-        
-            <img src="/Sprint-II/imagens/PG1/Img2.png" alt="" width="20%">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quibusdam suscipit mollitia nulla. Earum, quam enim quae numquam nesciunt reprehenderit architecto ipsum corporis ducimus libero tempore qui aliquid quisquam dolorem.</p>
-        
-            <img src="/Sprint-II/imagens/PG1/Img3.png" alt="" width="20%">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quibusdam suscipit mollitia nulla. Earum, quam enim quae numquam nesciunt reprehenderit architecto ipsum corporis ducimus libero tempore qui aliquid quisquam dolorem.</p>
-        
-            <img src="/Sprint-II/imagens/PG1/Img4.png" alt="" width="20%">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quibusdam suscipit mollitia nulla. Earum, quam enim quae numquam nesciunt reprehenderit architecto ipsum corporis ducimus libero tempore qui aliquid quisquam dolorem.</p>
-        
-            <img src="/Sprint-II/imagens/PG1/Img5.png" alt="" width="20%">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quibusdam suscipit mollitia nulla. Earum, quam enim quae numquam nesciunt reprehenderit architecto ipsum corporis ducimus libero tempore qui aliquid quisquam dolorem.</p>
-        
-            <img src="/Sprint-II/imagens/PG1/Img6.png" alt="" width="20%">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quibusdam suscipit mollitia nulla. Earum, quam enim quae numquam nesciunt reprehenderit architecto ipsum corporis ducimus libero tempore qui aliquid quisquam dolorem.</p>
-        </aside>
-
-
-       
-    </main>
-
-    <!-- Parte inferior da Página -->
-    <footer>
-        <!-- Imagens de silhuetas -->
-        <div>
-            <img src="/Sprint-II/imagens/PG1/Silhuetas.png" alt=""width="60%">
-        </div>
-
-        <!-- Logo no rodapé -->
-        <div>
-            <a href="/Sprint-II/index.html">
-                <img src="/Sprint-II/imagens/PG1/Logo_Seven.png" width="15%">
-            </a>
-
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus nulla nostrum provident ducimus asperiores quas!</p>
-        </div>
-
-        <!-- facebook|Instagram|Twitter|Youtube -->
-        <div>
-            <img src="/Sprint-II/imagens/Home/Facebook.png" width="30">
-            <a href="https://www.facebook.com/" target="_blank">SeVEn Facebook</a>
-
-            <img src="/Sprint-II/imagens/Home/Instagram.png" width="30">
-            <a href="https://www.instagram.com/" target="_blank">SeVEn Instagram</a>
-
-            <img src="/Sprint-II/imagens/Home/Twitter.png" width="30">
-            <a href="https://twitter.com/" target="_blank">SeVEn Twitter</a>
-
-            <img src="/Sprint-II/imagens/Home/Youtube.png" width="30">
-            <a href="https://www.youtube.com/" target="_blank">SeVEn Youtube</a>
-        </div>
-
-        <!-- Contato -->
-        <div>
-            <p>(99)99999-999</p>
-            <img src="/Sprint-II/imagens/Home/Telefone.png" alt="" width="30">
-            
-            <p>Seven.Lives@email.com</p>
-            <img src="/Sprint-II/imagens/Home/E-mail.png" alt="" width="30">
-
-            <p>Rua tal, 99 - Bairro - Cidade </p>
-            <img src="/Sprint-II/imagens/Home/Localização.png" alt="" width="30">
-
-            <p>(99)99999-999</p>
-            <img src="/Sprint-II/imagens/Home/Whatsapp.png" alt="" width="30">
-
-        </div>
-
-        <div>
-            <h6>© 2022 Proz Educação | SeVEn Lives</h6>
-        </div>
-    </footer>    
+            <div>
+                <h6>© 2022 Proz Educação | SeVEn Lives</h6>
+            </div>
+        </footer>      
 </body>
 </html>
