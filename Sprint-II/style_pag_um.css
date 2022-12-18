@@ -89,12 +89,31 @@ input {
 /* Até AQUI PERTENCE AO SLIDE PRONTO */
 /*Corpo das paginas paralelas */
 .divdocorpo, divgrid {
-    display: flow-root;
-    align-items: center;
-    text-align: center;
-
+    display: grid;
+    width: 500px;
+    height: 300px;
+    left: 111px;
+    top: 748px;
+    position: static;
+    padding-left: 50px;
+}
+.imgcorpo {
+    display: grid;
+    position: static;
+    width: 500px;
+    height: 300px;
+    left: 111px;
+    top: 1103px;
+    padding-bottom: 15px;
 }
 
+.asidedireito, grid, img {
+    display:grid;
+    grid-template-columns: auto;
+    width: 200px;
+    height: auto;
+
+}
 
 /* Aqui acaba o CSS das paginas Paralelas */
 .boxsilhuetas {
