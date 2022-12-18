@@ -1,12 +1,14 @@
+/* Este CSS REPETE EM TODAS AS PAGINAS */
 .boxmain {
     background-color: #888686;
-}
-.logoum {
-    width: 40;
+    border: #888686 solid 20px;
 }
 .boxverde {
     background-color: #41B48C;
+    border: #41B48C solid 10px;
+    border-color:  #41B48C 10px;
 }
+
 
 .destaques {
     display: flex;
@@ -30,9 +32,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
+        
 }
-
 .navigation {
     position: absolute;
     bottom: 20px;
@@ -86,33 +87,35 @@ input {
 }
 
 /* Até AQUI PERTENCE AO SLIDE PRONTO */
-
-
-.boximagens {
-    display: flex;
-    flex-direction: row;
-    padding-top: 5px;
-    padding-left: 15px;
+/*Corpo das paginas paralelas */
+.divdocorpo, divgrid {
+    display: grid;
+    width: 500px;
+    height: 300px;
+    left: 111px;
+    top: 748px;
+    position: static;
+    padding-left: 50px;
 }
-.boxparagrafos {
-    display: flex;
-    align-items:flex-end;
-}
-.boxpaginas {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-   
-}
-.categorias {
-    width: 100px;
-    display: flex;
-    padding-top: 10px;
-    padding:15px;
-
+.imgcorpo {
+    display: grid;
+    position: static;
+    width: 500px;
+    height: 300px;
+    left: 111px;
+    top: 1103px;
+    padding-bottom: 15px;
 }
 
+.asidedireito, grid, img {
+    display:grid;
+    grid-template-columns: auto;
+    width: 200px;
+    height: auto;
+
+}
+
+/* Aqui acaba o CSS das paginas Paralelas */
 .boxsilhuetas {
     background-color: #41B48C;
     width: 35%;
