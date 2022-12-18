@@ -87,7 +87,16 @@ input {
 }
 
 /* Até AQUI PERTENCE AO SLIDE PRONTO */
+/*Corpo das paginas paralelas */
+.divdocorpo, divgrid {
+    display: flow-root;
+    align-items: center;
+    text-align: center;
 
+}
+
+
+/* Aqui acaba o CSS das paginas Paralelas */
 .boxsilhuetas {
     background-color: #41B48C;
     width: 35%;
