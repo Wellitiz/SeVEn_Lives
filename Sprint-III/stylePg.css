@@ -224,6 +224,7 @@ body{
     width: 25vw;
     align-items: center;
     margin-right: 30px; 
+    color: white;
 }
 
 .boxcontatos img{
@@ -256,4 +257,105 @@ body{
     justify-content: center;
     color: white;
     background: #1E1E1E;
+}
+
+
+
+@media screen and (max-width: 1340px) {
+    #pesquisar{
+        width: 50vw;
+    }  
+}
+
+@media screen and (max-width: 1088px) {
+    #pesquisar{
+        width: 40vw;
+    }
+
+    .container .card{
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .container .card{
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 908px) {
+    .container{
+        display: grid;
+        margin-top: 20px;
+    }
+
+    #pesquisar{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .container{
+        display: grid;
+        margin-top: 20px;
+    }
+
+    #pesquisar{
+        width: 200px;
+    }
+
+    .silhuetas{
+        margin: 0;
+    }
+
+    .campodebusca{
+        margin-right: 100px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .container{
+        display: grid;
+        margin-top: 20px;
+    }
+
+    #pesquisar{
+        width: 150px;
+    }
+
+    .silhuetas{
+        margin: 0;
+    }
+
+    .silhuetas img{
+        width: 40px;
+    }
+
+    .campodebusca{
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .container{
+        display: grid;
+        margin-top: 20px;
+    }
+
+    #pesquisar{
+        width: 100px;
+    }
+
+    .silhuetas{
+        margin: 0;
+    }
+
+    .silhuetas img{
+        width: 40px;
+    }
+
+
+    .campodebusca{
+        margin-right: 0;
+    }
 }
