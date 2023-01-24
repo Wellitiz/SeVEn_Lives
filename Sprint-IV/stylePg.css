@@ -1,0 +1,361 @@
+body{
+    margin: 0;
+    margin-left: 0;
+    padding: 0;
+    font-family: Verdana;
+    /* background-color: green; */
+}
+
+
+
+/* Header */
+.logo img{
+    width: 140px;
+    height: 60px;
+    border: 0;
+    padding: 0;
+    margin-left: 140px;
+}
+
+.boxm1{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #888686;
+    padding: 1em;
+    
+}
+
+.campodebusca{
+    border-radius: 0.4em;
+    border-color: black;
+    padding: 0.2em;
+    background-color: white;
+    margin-right: 150px;
+}
+
+#pesquisar{
+    width: 750px;
+    height: 20px;
+    border: none;
+    font-size: 15px;
+}
+
+#lupa{
+    background-color: #41B48C;
+    width: 50px;
+    height: 25px;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#lupa img{
+    width: 20px;
+    color: white;
+}
+
+#lupa:hover{
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.boxverde{
+    background-color: #41B48C;
+    height: 30px;
+}
+
+
+
+/* Titulo da Página*/
+.titulo{
+    display: grid;
+    margin: 0;
+    border-radius: 60px;
+    justify-content: center;
+    text-align: center;
+}
+.titulo h1{
+    font-size: 30px;
+    margin: 0;
+    margin-top: 10px;
+    /* background-color: #41B48C; */
+}
+.titulo img{
+    width: 75vw;
+    /* height: 450px; */
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.8);
+}
+
+
+.Lado{
+    display: flex;
+    margin: 10px;
+}
+
+
+/* Corpo da Página */
+.divdocorpo{
+    /* background-color: #41B48C; */
+    width: 65vw;
+
+}
+
+.divdocorpo img{
+    width: 600px;
+    height: 350px;
+}
+
+
+
+/* Aside */
+.lado{
+    display: flex;
+    align-items: center;
+    width: 35vw;
+    /* background-color: yellow; */
+    margin-bottom: 20px;
+    margin-left: 100px;
+}
+
+.lado p{
+    margin-left: 10px;
+}
+
+.lado img{
+    width: 200px;
+    margin: 0;
+}
+
+.lado img:hover{
+    opacity: 0.9;
+}
+
+
+/* Footer */
+
+/* Silhueta */
+.boxsilhuetas{
+    margin: 0;
+    padding: 0;
+    margin-top: 40px;
+    min-height: 10vh;
+    background-color: #41B48C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.silhuetas{
+    margin: 10px;
+}
+
+.silhuetas img{
+    width: 60px;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+
+
+/* Logo Inf */
+/* Seção 6 */
+.inf_pag{
+    display:flex;
+    background-color: #888686;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+#logo_rodape{
+    font-size: 20px;
+    width: 25vw;
+    margin-left: 30px;    
+}
+
+#logo_rodape img{
+    width: 10px;
+    width: 10vw;
+    margin: 0;
+}
+
+#texto_logo_rodape{
+    margin: 0;
+}
+
+
+
+/* Nossas Redes */
+.boxredes{
+    width: 25vw;
+    justify-content: end;
+}
+
+.boxredes img{
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+}
+
+.boxredes a:link{
+    text-decoration: none;
+}
+
+.boxredes a:link:hover{
+    opacity: 0.5;
+}
+
+.redes{
+    display: flex;
+    align-items: center;
+    height: 35px;
+}
+
+
+
+/* Nossos Contatos */
+.boxcontatos{
+    display: grid;
+    text-align: end;
+    width: 25vw;
+    align-items: center;
+    margin-right: 30px; 
+    color: white;
+}
+
+.boxcontatos img{
+    width: 30px;
+}
+
+.cont{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 35px;
+}
+
+.cont img{
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+}
+
+
+
+/* Copy */
+.copy{ 
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    background: #1E1E1E;
+}
+
+
+
+@media screen and (max-width: 1340px) {
+    #pesquisar{
+        width: 50vw;
+    }  
+}
+
+@media screen and (max-width: 1088px) {
+    #pesquisar{
+        width: 40vw;
+    }
+
+    .container .card{
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .container .card{
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 908px) {
+    .container{
+        display: grid;
+        margin-top: 20px;
+    }
+
+    #pesquisar{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .container{
+        display: grid;
+        margin-top: 20px;
+    }
+
+    #pesquisar{
+        width: 200px;
+    }
+
+    .silhuetas{
+        margin: 0;
+    }
+
+    .campodebusca{
+        margin-right: 100px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .container{
+        display: grid;
+        margin-top: 20px;
+    }
+
+    #pesquisar{
+        width: 150px;
+    }
+
+    .silhuetas{
+        margin: 0;
+    }
+
+    .silhuetas img{
+        width: 40px;
+    }
+
+    .campodebusca{
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .container{
+        display: grid;
+        margin-top: 20px;
+    }
+
+    #pesquisar{
+        width: 100px;
+    }
+
+    .silhuetas{
+        margin: 0;
+    }
+
+    .silhuetas img{
+        width: 40px;
+    }
+
+
+    .campodebusca{
+        margin-right: 0;
+    }
+}
