@@ -14,6 +14,7 @@
     <body>
         <header>
             <!-- Cabeçalho da pagina | Seção 1 -->
+            <div class="Ancora"><a name="Home"></a></div>
             <div class="boxmain">
                 <div class="boxm1">
                     <div class="logo">
@@ -21,18 +22,21 @@
                         <img class="logoum" src="./img/Geral/Logo_Seven.png" alt="Logo SeVEn">
                         </a>
                     </div>
-
-                    <!-- Botão de pesquisa -->
-                    <div class="campodebusca">
-                        <form method="post">
-                            <input type="text" name="pesquisa" id="pesquisar" placeholder="O que procura?" required>
-                            <button type="submit" id="lupa"> <img src="./img/Geral/Lupa.png"></button>
-                        </form>
-                    </div>
+                    <nav class="menu">
+                        <a href="#Home">Home</a>
+                        <a href="#Sobre">Sobre</a>
+                        <a href="#Paginas">Paginas</a>
+                        <a href="#Contato">Contato</a>
+                        <div class="usuario">
+                            <a href="">Cadastro</a>
+                            <a href="">Loguin</a>
+                        </div>                        
+                    </nav>                    
                 </div>
+                <div class="boxverde"></div>
             </div>
 
-            <div class="boxverde"></div>
+            
         </header>
 
         <main>
@@ -71,6 +75,8 @@
                 </div>
             </div>
 
+            <div class="Ancora"><a name="Sobre"></a></div>
+
             <!-- Estrutura de Informaçãoes | Seção 3-->
             <div class="Inf">
                 <div class="container">
@@ -87,7 +93,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="card">
                         <div class="face face1">
                             <div class="content">
@@ -101,7 +106,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="card">
                         <div class="face face1">
                             <div class="content">
@@ -122,53 +126,31 @@
             </div>
 
             <!-- Estrutura de Links de paginas | Seção 4-->
+            <div class="Ancora"><a name="Paginas"></a></div>
+            
+            <h2 class="titulo-pg">Clique para conhecer um estilo de Vida</h2>
+
             <div class="paginas">
-                <div class="pagina">
-                    <a href="./pagina1.html">
-                        <img src="./img/Home/Cat1.png" alt="">
-                    </a>
+                <div class="pagina" id="PG1"><a href="./pagina1.html"></a>
                 </div>
-
-                <div class="pagina">
-                    <a href="./pagina2.html">
-                        <img src="./img/Home/Cat2.png" alt="">
-                    </a>
+                <div class="pagina" id="PG2"><a href="./pagina2.html"></a>
                 </div>
-
-                <div class="pagina">
-                    <a href="./pagina3.html">
-                        <img src="./img/Home/Cat3.png" alt="">
-                    </a>
+                <div class="pagina" id="PG3"><a href="./pagina3.html"></a>
+                </div>                
+                <div class="pagina" id="PG4"><a href="./pagina4.html"></a>
                 </div>
-                
-                <div class="pagina">
-                    <a href="./pagina4.html">
-                        <img src="./img/Home/Cat4.png" alt="">
-                    </a>
+                <div class="pagina" id="PG5"><a href="./pagina5.html"></a>
                 </div>
-
-                <div class="pagina">
-                    <a href="./pagina5.html">
-                        <img src="./img/Home/Cat5.png" alt="">
-                    </a>
+                <div class="pagina" id="PG6"><a href="./pagina6.html"></a>
                 </div>
-
-                <div class="pagina">
-                    <a href="./pagina6.html">
-                        <img src="./img/Home/Cat6.png" alt="">
-                    </a>
-                </div>
-
-                <div class="pagina">
-                    <a href="./pagina7.html">
-                        <img src="./img/Home/Cat7.png" alt="">
-                    </a>
+                <div class="pagina" id="PG7"><a href="./pagina7.html"></a>
                 </div>
             </div>
         </main>
         
         <footer>
             <!-- Imagens de silhuetas | Seção 5-->
+            <div class="Ancora"><a name="Contato"></a></div>
             <div class="boxsilhuetas">
                 <div class="silhuetas">
                     <img src="./img/Geral/Sil-1.png" alt="">
@@ -205,23 +187,19 @@
     
                 <!-- Redes Sociais -->
                 <div class="boxredes">
-                    <div class="redes">
-                        <img src="./img/Geral/Facebook.png">
+                    <div class="redes" id="RS1">
                         <a href="https://www.facebook.com/" target="_blank">SeVEn Facebook</a>
                     </div>
 
-                    <div class="redes">
-                        <img src="./img/Geral/Instagram.png">
+                    <div class="redes" id="RS2">
                         <a href="https://www.instagram.com/" target="_blank">SeVEn Instagram</a>
                     </div>
 
-                    <div class="redes">
-                        <img src="./img/Geral/Twitter.png">
+                    <div class="redes" id="RS3">
                         <a href="https://twitter.com/" target="_blank">SeVEn Twitter</a>
                     </div>
 
-                    <div class="redes">
-                        <img src="./img/Geral/Youtube.png">
+                    <div class="redes" id="RS4">
                         <a href="https://www.youtube.com/" target="_blank">SeVEn Youtube</a>
                     </div>  
                 </div>
