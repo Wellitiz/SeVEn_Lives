@@ -349,6 +349,7 @@ body{
 
 .boxredes a{
     padding-left: 30px;
+    height: 25px;
     align-content: center;
 }
 
@@ -391,6 +392,42 @@ body{
     background: url(./img/Geral/Instagram.png) no-repeat;
     background-size: 25px;
     align-items: center;
+    transition: 0.2s;
+}
+
+#RS2:hover{
+    background: url(./img/Geral/InstagramV.png) no-repeat;
+    background-size: 25px;
+    align-items: center;
+    transition: 0.2s;
+}
+
+#RS3{
+    background: url(./img/Geral/Twitter.png) no-repeat;
+    background-size: 25px;
+    align-items: center;
+    transition: 0.2s;
+}
+
+#RS3:hover{
+    background: url(./img/Geral/TwitterV.png) no-repeat;
+    background-size: 25px;
+    align-items: center;
+    transition: 0.2s;
+}
+
+#RS4{
+    background: url(./img/Geral/Youtube.png) no-repeat;
+    background-size: 25px;
+    align-items: center;
+    transition: 0.2s;
+}
+
+#RS4:hover{
+    background: url(./img/Geral/YoutubeV.png) no-repeat;
+    background-size: 25px;
+    align-items: center;
+    transition: 0.2s;
 }
 
 
@@ -399,6 +436,7 @@ body{
     display: flex;
     height: 25px;
     margin: 10px 0;
+    background:#1E1E1E
 }
 
 
@@ -430,8 +468,6 @@ body{
     height: 30px;
     margin: 5px;
 }
-
-
 
 /* Copy */
 .copy{ 
