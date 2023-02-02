@@ -3,8 +3,8 @@
     --color-red: #e63636;
     --color-dark1: #181818;
     --color-dark2: #1e1e1e;
-    --color-purple1: #9333FF;
-    --color-purple2: indigo;
+    --color-purple1: #41B48C;
+    --color-purple2: #41B48C;
 }
 
 *{
@@ -83,11 +83,40 @@ button[type="submit"]{
     color: var(--color-white);
     cursor: pointer;
     transition: .3s;
+    opacity: 0.7;
 }
 
 button[type="submit"]:hover{
     background-color: var(--color-purple1);
+    opacity: 1;
 }
+
+.HomeB{
+    padding: 1rem;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-purple2);
+    color: var(--color-white);
+    cursor: pointer;
+    transition: .3s;
+    text-align: center;
+    opacity: 0.7;
+}
+
+.HomeB a{
+    width: 10vw;
+    color: white;
+    text-decoration: none;
+    width: 50px;
+}
+
+.HomeB:hover{
+    opacity: 1;
+}
+
+
 
 @media screen and (max-width: 576px) {
     .box-select{
