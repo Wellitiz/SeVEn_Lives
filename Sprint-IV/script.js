@@ -14,10 +14,112 @@ function nextImage() {
   }
 
   document.getElementById("radio" + time).checked = true;
-}
+};
+
+
+
+const um = document.querySelector(".um");
+const tres = document.querySelector(".tres");
+const lg = document.querySelector("#lg");
+const cd = document.querySelector("#cd");
+const btnfor1 = document.querySelector(".btnfor1");
+const btnfor2 = document.querySelector(".btnfor2");
+
+    btnfor1.addEventListener('click', function() {
+
+        if(um.style.display === 'none') {
+            um.style.display = 'flex';
+        } else {
+            um.style.display = 'none';
+        }
+
+    });
+
+    lg.addEventListener('click', function() {
+
+        if(um.style.display === 'flex') {
+            um.style.display = 'none';
+        } else {
+            um.style.display = 'flex';
+        }
+
+    });
+
+    btnfor2.addEventListener('click', function() {
+
+        if(tres.style.display === 'none') {
+            tres.style.display = 'flex';
+        } else {
+            tres.style.display = 'none';
+        }
+
+    });
+
+    cd.addEventListener('click', function() {
+
+        if(tres.style.display === 'flex') {
+            tres.style.display = 'none';
+        } else {
+            tres.style.display = 'flex';
+        }
+
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    // Função de M/E no Botão
+    // btnfor.addEventListener("click", function() {
+
+    //     if(um.style.display === 'none') {
+    //         texte.style.display = 'flex';
+    //     } else {
+    //         um.style.display = 'none';
+    //     }
+        
+    // });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //VALIDAÇÃO FORMULÁRIO
-
 const form = document.getElementById('form');
 const campos = document.querySelectorAll('.required');
 const spans  = document.querySelectorAll('.span-required');
