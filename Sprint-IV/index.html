@@ -28,12 +28,8 @@
                         <a href="#Paginas" id="mn">Paginas</a>
                         <a href="#Contato" id="mn">Contato</a>
                         <div class="usuario">
-                            <div class="us">
-                                <a href="./formRegistry.html">Cadastro</a>
-                            </div>
-                            <div class="us">
-                                <a href="./formLogin.html">Login</a>
-                            </div>
+                            <button class="us" id="cd">Cadastro</button>
+                            <button class="us" id="lg">Login</button>
                         </div>                        
                     </nav>                    
                 </div>
@@ -44,6 +40,67 @@
         </header>
 
         <main>
+
+            <div class="um">
+                <div class="dois">            
+                    <div class="content">
+                        <h1 id="Login">Login</h1>
+                        <form class="form">
+                            <div>
+                                <input type="text" placeholder="Nome" class="inputs required" oninput="nameValidate()">
+                                <span class="span-required">Nome deve ter no mínimo 3 caracteres</span>
+                            </div>
+                            <div>
+                                <input type="email" placeholder="email" class="inputs required" oninput="emailValidate()">
+                                <span class="span-required">Digite um email válido</span>
+                            </div>
+                            <div>
+                                <input type="password" placeholder="Senha" class="inputs required" oninput="mainPasswordValidate()">
+                                <span class="span-required">Digite uma senha com no mínimo 8 caracteres</span>
+                            </div>
+                            
+                            <button type="submit">Login</button>
+                
+                            <button class="btnfor1">Fechar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tres">
+                <div class="dois">
+                    <div class="content">
+                        <h1 id="Cadastro">Cadastro</h1>
+                        <form class="form">
+                            <div>
+                                <input type="text" placeholder="Digite seu nome" class="inputs required" oninput="nameValidate()">
+                                <span class="span-required">Nome deve ter no mínimo 3 caracteres</span>
+                            </div>
+                            <div>
+                                <input type="email" placeholder="Digite seu melhor email" class="inputs required" oninput="emailValidate()">
+                                <span class="span-required">Digite um email válido</span>
+                            </div>
+                            <div>
+                                <input type="password" placeholder="Senha" class="inputs required" oninput="mainPasswordValidate()">
+                                <span class="span-required">Digite uma senha com no mínimo 8 caracteres</span>
+                            </div>
+                            <div>
+                                <input type="password" placeholder="Repita a sua senha" class="inputs required" oninput="comparePassword()">
+                                <span class="span-required">Senhas devem ser compatíveis</span>
+                            </div>
+                            <textarea class="inputs" name="descricao" id="descricao" cols="25" rows="10" placeholder="Fale sobre os seus interesses (opcional)..."></textarea>
+                
+                            <button type="submit">Enviar</button>
+
+                            <button class="btnfor2">Fechar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Login -->
+
+            
+
             <!-- Estrutura de Slides | Seção 2-->
             <div class="destaques">
                 <div class="slider">
