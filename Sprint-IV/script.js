@@ -45,6 +45,7 @@ const btnfor2 = document.querySelector(".btnfor2");
 
     });
 
+    
     btnfor2.addEventListener('click', function() {
 
         if(tres.style.display === 'none') {
@@ -52,6 +53,7 @@ const btnfor2 = document.querySelector(".btnfor2");
         } else {
             tres.style.display = 'none';
         }
+        
 
     });
 
@@ -66,27 +68,6 @@ const btnfor2 = document.querySelector(".btnfor2");
     });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    
-
-
-
-
     // Função de M/E no Botão
     // btnfor.addEventListener("click", function() {
 
@@ -98,40 +79,20 @@ const btnfor2 = document.querySelector(".btnfor2");
         
     // });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //VALIDAÇÃO FORMULÁRIO
-const form = document.getElementById('form');
+const form = document.getElementsByClassName('.form');
 const campos = document.querySelectorAll('.required');
 const spans  = document.querySelectorAll('.span-required');
 const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
 
+form.forEach((form) =>
     form.addEventListener('submit', (event) => {
         event.preventDefault();
         nameValidate();
         emailValidate();
         mainPasswordValidate();
         comparePassword();
-    });
+    }));
 
     function setError(index){
         campos[index].style.border = '2px solid #e63636';
@@ -187,15 +148,3 @@ const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
             setError(3);
         }
     }
-
-
-
-// CRIA O ELEMENTO
-const about = document.createElement(div);
-//POPULA O ELEMENTO
-about.innerHTML = `
-<h1>Aqui foi renderizado</h1>
-`
-//ADICIONA O ELEMENTO NO DOM
-const main = document.querySelector('main');
-main.appendChild(about);
