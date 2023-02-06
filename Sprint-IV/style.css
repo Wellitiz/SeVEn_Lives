@@ -451,6 +451,11 @@ body{
     opacity: 0.8;
 }
 
+.pagina a{
+    width: 100%;
+    height: 100%;
+}
+
 #PG1{
     background-image: url(./img/Home/Cat1.png);
 }

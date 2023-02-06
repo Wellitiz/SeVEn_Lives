@@ -1,4 +1,4 @@
-// PASSAGEM DOS SLIDES
+// // PASSAGEM DOS SLIDES
 let time = 1;
 document.getElementById("radio1");
 
@@ -17,7 +17,7 @@ function nextImage() {
 };
 
 
-
+// // Display Formularios
 const um = document.querySelector(".um");
 const tres = document.querySelector(".tres");
 const lg = document.querySelector("#lg");
@@ -45,7 +45,6 @@ const btnfor2 = document.querySelector(".btnfor2");
 
     });
 
-    
     btnfor2.addEventListener('click', function() {
 
         if(tres.style.display === 'none') {
@@ -53,7 +52,6 @@ const btnfor2 = document.querySelector(".btnfor2");
         } else {
             tres.style.display = 'none';
         }
-        
 
     });
 
@@ -68,83 +66,98 @@ const btnfor2 = document.querySelector(".btnfor2");
     });
 
 
-    // Função de M/E no Botão
-    // btnfor.addEventListener("click", function() {
 
-    //     if(um.style.display === 'none') {
-    //         texte.style.display = 'flex';
-    //     } else {
-    //         um.style.display = 'none';
-    //     }
-        
-    // });
-
-//VALIDAÇÃO FORMULÁRIO
-const form = document.getElementsByClassName('.form');
-const campos = document.querySelectorAll('.required');
+// Validação Formularios
+const form1 = document.getElementById('form1');
+const form2 = document.getElementById('form2');
+const campos = document.querySelectorAll('.inputs');
 const spans  = document.querySelectorAll('.span-required');
 const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
 
-form.forEach((form) =>
-    form.addEventListener('submit', (event) => {
-        event.preventDefault();
-        nameValidate();
-        emailValidate();
-        mainPasswordValidate();
-        comparePassword();
-    }));
+form1.addEventListener('submit', (event) => {
+    event.preventDefault();
+    nameValidate();
+    emailValidate();
+    mainPasswordValidate();
+});
+form2.addEventListener('submit', (event) => {
+    event.preventDefault();
+    nameValidate2();
+    emailValidate2();
+    mainPasswordValidate2();
+    comparePassword();
+});
 
-    function setError(index){
-        campos[index].style.border = '2px solid #e63636';
-        spans[index].style.display = 'block';
-    }
+// Formulario de Login
+function setError(index){
+    campos[index].style.border='2px solid #e63636';
+    spans[index].style.display='block';
+}
 
-    function removeError(index){
-        campos[index].style.border = '';
-        spans[index].style.display = 'none';
-    }
+function removeError(index){
+    campos[index].style.border='';
+    spans[index].style.display='none';
+}
 
-    function nameValidate(){
-        if(campos[0].value.length < 3)
-        {
-            setError(0);
-        }
-        else
-        {
-            removeError(0);
-        }
+function nameValidate(){
+    if(campos[0].value.length <3){
+        setError(0);
     }
+    else{
+        removeError(0);
+    }
+}
 
-    function emailValidate(){
-        if(!emailRegex.test(campos[1].value))
-        {
-            setError(1);
-        }
-        else
-        {
-            removeError(1);
-        }
+function emailValidate(){
+    if(!emailRegex.test(campos[1].value)){
+        setError(1);
     }
+    else{
+        removeError(1);
+    }
+}
 
-    function mainPasswordValidate(){
-        if(campos[2].value.length < 8)
-        {
-            setError(2);
-        }
-        else
-        {
-            removeError(2);
-            comparePassword();
-        }
+function mainPasswordValidate(){
+    if(campos[2].value.length<8){
+        setError(2);
     }
+    else{
+        removeError(2)
+    }
+}
 
-    function comparePassword(){
-        if(campos[2].value == campos[3].value && campos[3].value.length >= 8)
-        {
-            removeError(3);
-        }
-        else
-        {
-            setError(3);
-        }
+// Formulario de Cadastro
+function nameValidate2(){
+    if(campos[3].value.length <3){
+        setError(3);
     }
+    else{
+        removeError(3);
+    }
+}
+function emailValidate2(){
+    if(!emailRegex.test(campos[4].value)){
+        setError(4);
+    }
+    else{
+        removeError(4);
+    }
+}
+function mainPasswordValidate2(){
+    if(campos[5].value.length<8){
+        setError(5);
+    }
+    else{
+        removeError(5);
+        // comparePassword();
+    }
+}
+
+function comparePassword(){
+    if(campos[5].value == campos[5].value && campos[6].value.length >= 8){
+        removeError(6);
+    }
+    else{
+        setError(6);
+    }
+}
