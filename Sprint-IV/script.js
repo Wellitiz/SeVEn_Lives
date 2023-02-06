@@ -154,7 +154,7 @@ function mainPasswordValidate2(){
 }
 
 function comparePassword(){
-    if(campos[5].value == campos[5].value && campos[6].value.length >= 8){
+    if(campos[5].value == campos[6].value && campos[6].value.length >= 8){
         removeError(6);
     }
     else{
