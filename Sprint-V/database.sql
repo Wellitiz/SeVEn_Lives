@@ -1,42 +1,46 @@
 ---------------------------CRIANDO AS TABELAS------------------------------
-CREATE TABLE blogueiro (
+CREATE TABLE actors (
 	id serial PRIMARY KEY,
-	nome VARCHAR(30) NOT NULL
+	name VARCHAR(30) not null,
+	lastname VARCHAR(30) default null,
+	lastupdate DATE not null default now,
+	createdate DATE not null default now
 );
 
 CREATE TABLE areas (
 	id serial PRIMARY KEY,
-	titulo VARCHAR(15) NOT NULL
+	name VARCHAR(20) not null,
+	createdate DATE not null default now,
+	lastupdate DATE not null default now
 );
 
-CREATE TABLE usuario (
+CREATE TABLE users (
+	id serial PRIMARY KEY
+	name VARCHAR not null,
+	lastname VARCHAR default null,
+	email VARCHAR default null,
+	createdate DATE not null default now,
+	lastupdate DATE not null default now
+);
+
+CREATE TABLE posts (
 	id serial PRIMARY KEY,
-	nome VARCHAR(30) NOT NULL,
-	email VARCHAR(20) NOT NULL
-);
+	areas VARCHAR FOREIGN KEY not null,
+	actors FOREIGN KEY not null,
+	lastupdate DATE not null default now,
+	createdate DATE not null default now
 
-CREATE TABLE interesses (
-	id serial PRIMARY KEY,
-	titulo_area VARCHAR(30) NOT NULL
-);
-
-CREATE TABLE user_interesses (
-	fk_id_usuario INT,
-	fk_id_areas INT,
-	CONSTRAINT user_interesses_pk PRIMARY KEY(fk_id_usuario, fk_id_areas),
-	CONSTRAINT fk_id_usuario FOREIGN KEY(fk_id_usuario) REFERENCES usuario(ID),
-	CONSTRAINT fk_id_areas FOREIGN KEY(fk_id_areas) REFERENCES areas(ID)
 );
 
 ------------------------------INSERINDO DADOS----------------------------------
-INSERT INTO blogueiro (nome) VALUES (
+INSERT INTO actors (name) VALUES (
 	('Izaias Nascimento'),
 	('Wellington Silva'),
 	('José Carlos'),
 	('Matheus Bastos')
 );
 
-INSERT INTO fk_id_areas (titulo) VALUES (
+INSERT INTO posts (areas) VALUES (
 	('Qualidade de vida'),
 	('Espiritualidade'),
 	('Família'),
