@@ -5,4 +5,4 @@
 2. Criado tabelas na 3FN no banco de dados com informações de teste
 3. Realizado consultas simples, com junção de tabelas
 
-![](assets/)
+![](assets/Diagram%20ER.jpg)
