@@ -3,7 +3,7 @@ body{
     margin-left: 0;
     padding: 0;
     font-family: Verdana;
-    background-color: #FFFFFF;
+    background-color: #e5e4e2;
 }
 
 /* Inicio Seção 1 (Parte superio do menu) */
@@ -46,6 +46,19 @@ body{
     font-size: 25px;
 }
 
+.usuario{
+    display: flex;
+    gap: 20px;
+}
+
+.us{
+    color: white;
+    font-size: 25px;
+    background-color: #41B48C;
+    border-radius: 15px;
+    border: none;
+}
+
 #mn:hover{
     background-color: #41B48C;
     border-radius: 15px;
@@ -80,23 +93,7 @@ body{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Estilização Formularios */
 :root{
     --color-white: #fff;
     --color-red: #e63636;
@@ -233,31 +230,7 @@ body{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Inicio Seção 21 (Parte referente aos slides) */
+/* Inicio Seção 2 (Parte referente aos slides) */
 .destaques{
     padding: 110px 0 20px 0;
     width: 100%;
@@ -271,7 +244,7 @@ body{
     width: 85%;
     overflow: hidden;
     border-radius: 50px;
-    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.8);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
  
 .slides{
@@ -304,7 +277,7 @@ body{
 }
 
 .manual-btn{
-    border: 2px solid #fff;
+    /* border: 2px solid #fff; */
     width: 20px;
     padding: 5px;
     bottom: 20px;
@@ -313,9 +286,9 @@ body{
     transition: 0.4s;
 }
 
-.manual-btn:hover{
+/* .manual-btn:hover{
     background-color: #fff;
-}
+} */
 
 #radio1:checked ~ .first{
     margin-left: 0;
@@ -420,7 +393,7 @@ body{
 /* Inicio Seção 4 (Parte referente as paginas) */
 .titulo-pg{
     text-align: center;
-    font-size: 50px;
+    font-size: 2em;
     color: #888686;
 }
 
@@ -437,11 +410,12 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    gap: 5px;
 }
 
 .pagina{
     align-items: center;
-    width: 60px;
+    width: 40px;
     display: flex;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.8);
     border-radius: 50px;
@@ -460,32 +434,66 @@ body{
     background-image: url(./img/Home/Cat1.png);
 }
 
+#PG1:hover{
+    background-image: url(./img/Home/Cat1.2.png);
+    transition: 0.8s;
+}
+
 #PG2{
     background-image: url(./img/Home/Cat2.png);
+}
+
+#PG2:hover{
+    background-image: url(./img/Home/Cat2.2.png);
+    transition: 0.8s;
 }
 
 #PG3{
     background-image: url(./img/Home/Cat3.png);
 }
 
+#PG3:hover{
+    background-image: url(./img/Home/Cat3.2.png);
+    transition: 0.8s;
+}
+
 #PG4{
     background-image: url(./img/Home/Cat4.png);
+}
+
+#PG4:hover{
+    background-image: url(./img/Home/Cat4.2.png);
+    transition: 0.8s;
 }
 
 #PG5{
     background-image: url(./img/Home/Cat5.png);
 }
 
+#PG5:hover{
+    background-image: url(./img/Home/Cat5.2.png);
+    transition: 0.8s;
+}
+
 #PG6{
     background-image: url(./img/Home/Cat6.png);
+}
+
+#PG6:hover{
+    background-image: url(./img/Home/Cat6.2.png);
+    transition: 0.8s;
 }
 
 #PG7{
     background-image: url(./img/Home/Cat7.png);
 }
 
+#PG7:hover{
+    background-image: url(./img/Home/Cat7.2.png);
+    transition: 0.8s;
+}
+
 .pagina:hover{
-    transition: 0.5s;
     transform: translate(-2px, -2%);
     opacity: 1;
 }
@@ -523,8 +531,6 @@ body{
     justify-content: space-between;
     align-items: center;
 }
-
-
 
 #logo_rodape{
     font-size: 20px;
@@ -631,13 +637,10 @@ body{
     transition: 0.2s;
 }
 
-
-
 .redes{
     display: flex;
     height: 25px;
     margin: 10px 0;
-    background:#1E1E1E
 }
 
 
@@ -714,10 +717,6 @@ body{
 }
 
 @media screen and (max-width: 1088px) {
-    #pesquisar{
-        width: 40vw;
-    }
-
     .container .card{
         padding: 5px;
     }
@@ -730,24 +729,120 @@ body{
 }
 
 @media screen and (max-width: 908px) {
-    .container{
-        display: grid;
-        margin-top: 20px;
+    .slider{
+        width: 95%;
+        border-radius: 20px;
     }
-
-    #pesquisar{
-        width: 300px;
+    .container{
+        display: block;
+        width: 90%;
+        height: auto;
+    }
+    .container .card{
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+    .container .card .face{
+        width: 60%;
+        height: 110px;
+    }
+    .container .card .face.face1{
+        width: 150px;
+        height: 110px;
+        background: #41B48C;
+        transform: translateY(0px);
+    }
+    .container .card .face.face1 .content{
+        opacity: 1;
+    }
+    .container .card .face.face1 .content img{
+        max-width: 60px;
+    }
+    .container .card .face.face1 .content h3{
+        font-size: 14px;
+    }
+    .container .card .face.face2{
+        transform: translateY(0px);
+        text-align: center;
+        height: 110px;
+        box-shadow: none;
+    }
+    .container .card .face.face2 .content p{
+        font-size: 10px;
+        margin: 0;
+        padding: 0 10px;
     }
 }
 
-@media screen and (max-width: 840px) {
-    .container{
-        display: grid;
-        margin-top: 20px;
+@media screen and (max-width: 840px) {    
+    .boxm1{
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #888686;
+    }
+    
+    .logo img{
+        width: 140px;
+        height: 60px;
+        border: 0;
+        padding: 0;
+    }
+    
+    .menu{
+        display: flex;
+        justify-content: space-around;
+        width: 60%;
+    }
+    
+    .menu a{
+        padding: 5px;
+        display: flex;
+        justify-content: space-around;
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+    }
+    
+    #mn:hover{
+        background-color: #41B48C;
+        border-radius: 15px;
+        transition: 0.5s;
+        color: #333;
     }
 
-    #pesquisar{
-        width: 200px;
+    .usuario{
+        display: flex;
+        gap: 10px;
+    }
+    
+    .us{
+        color: white;
+        font-size: 20px;
+        background-color: #41B48C;
+        border-radius: 15px;
+        border: none;
+    }
+
+    
+    .slider{
+        border-radius: 0px;
+        width: 100%;
+    }
+
+    .titulo-pg{
+        font-size: 1.5em;
+    }
+
+    .pagina{
+        border-radius: 0px;
+    }
+
+    .paginas{
+        width: 100%;
+        margin: 0 0px;
     }
 
     .silhuetas{
@@ -755,25 +850,153 @@ body{
     }
 
     .inf_pag{
-        display: grid;
-        justify-content: center;
+        display:flex;
+        flex-direction: column;
     }
 
-    .campodebusca{
-        margin-right: 100px;
+    #logo_rodape{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        height: 150px;
+        text-align: center;
     }
+    #logo_rodape a{
+        margin: 0 auto;
+    }
+
+    .boxredes{
+        width: 25vw;
+        padding-left: 65px;
+    }
+
+    .boxredes a{
+        padding-left: 30px;
+        height: 20px;
+        font-size: 10px;
+    }
+
+    .boxredes a:link{
+        color: white;
+        text-decoration: none;
+    }
+
+    .boxredes a:link:hover{
+        color: white;
+        text-decoration: none;
+    }
+
+    .boxredes a:visited{
+        color: white;
+        text-decoration: none;
+    }
+
+    .boxredes a:visited:hover{
+        color: white;
+        text-decoration: none;
+    }
+
+    #RS1:hover{
+        background: url(./img/Geral/Facebook.png) no-repeat;
+        background-size: 25px;
+        align-items: center;
+    }
+    
+    #RS2:hover{
+        background: url(./img/Geral/Instagram.png) no-repeat;
+        background-size: 25px;
+        align-items: center;
+    }
+    
+    #RS3:hover{
+        background: url(./img/Geral/Twitter.png) no-repeat;
+        background-size: 25px;
+        align-items: center;
+    }
+    
+    #RS4:hover{
+        background: url(./img/Geral/Youtube.png) no-repeat;
+        background-size: 25px;
+        align-items: center;
+    }
+
+
+    .boxcontatos{
+        text-align: end;
+        width: 25vw;
+        align-items: center;
+        margin-right: 0px;
+        color: white;
+        padding-left: 65px;
+    }
+    
+    .boxcontatos img{
+        width: 30px;
+    }
+    
+    .cont{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: left;
+        width: 25vw;
+    }
+
+    .cont p{
+        font-size: 10px;
+        margin: 0;
+    }
+
+    .cont img{
+        width: 25px;
+        height: 25px;
+        margin: 0px;
+    }
+
 }
 
 @media screen and (max-width: 680px) {
-    .container{
-        display: grid;
-        margin-top: 20px;
+    .boxm1{
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #888686;
     }
-
-    #pesquisar{
-        width: 150px;
+    
+    .logo img{
+        width: 100px;
+        height: 45px;
+        border: 0;
+        padding: 0;
     }
-
+    
+    .menu{
+        display: flex;
+        justify-content: space-around;
+        width: 60%;
+    }
+    
+    .menu a{
+        font-size: 15px;
+    }
+    
+    .usuario{
+        display: flex;
+        gap: 5px;
+        font-size: 10px;
+    }
+    
+    .us{
+        color: white;
+        font-size: 20px;
+        background-color: #41B48C;
+        border-radius: 10px;
+        border: none;
+    }
+    .titulo-pg{
+        font-size: 1em;
+    }
     .silhuetas{
         margin: 0;
     }
@@ -787,19 +1010,77 @@ body{
         justify-content: center;
     }
 
-    .campodebusca{
-        margin-right: 0;
+    #PG1{
+        background-image: url(./img/Home/Cat1.2.png);
+        opacity: 1;
+    }
+    
+    #PG2{
+        background-image: url(./img/Home/Cat2.2.png);
+        opacity: 1;
+    }
+    
+    #PG3{
+        background-image: url(./img/Home/Cat3.2.png);
+        opacity: 1;
+    }
+    
+    #PG4{
+        background-image: url(./img/Home/Cat4.2.png);
+        opacity: 1;
+    }
+    
+    #PG5{
+        background-image: url(./img/Home/Cat5.2.png);
+        opacity: 1;
+    }
+    
+    #PG6{
+        background-image: url(./img/Home/Cat6.2.png);
+        opacity: 1;
+    }
+    
+    #PG7{
+        background-image: url(./img/Home/Cat7.2.png);
+        opacity: 1;
+    }
+    
+    .pagina:hover{
+        transform: translate(0px, 0%);
+        opacity: 1;
     }
 }
 
 @media screen and (max-width: 530px) {
-    .container{
-        display: grid;
-        margin-top: 20px;
+    .boxm1{
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #888686;
     }
-
-    #pesquisar{
-        width: 100px;
+    
+    .pagina{
+        height: 380px;
+    }
+    
+    .logo img{
+        width: 80px;
+        height: 35px;
+    }
+        
+    .menu a{
+        font-size: 10px;
+    }
+    
+    .usuario{
+        display: flex;
+        gap: 5px;
+        font-size: 10px;
+    }
+    
+    .us{
+        font-size: 10px;
     }
 
     .silhuetas{

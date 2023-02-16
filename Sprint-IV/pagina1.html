@@ -13,6 +13,7 @@
     <body>
         <header>
             <!-- Cabeçalho da pagina | Seção 1 -->
+            <div class="Ancora"><a name="Home"></a></div>
             <div class="boxmain">
                 <div class="boxm1">
                     <div class="logo">
@@ -20,18 +21,21 @@
                         <img class="logoum" src="./img/Geral/Logo_Seven.png" alt="Logo SeVEn">
                         </a>
                     </div>
-
-                    <!-- Botão de pesquisa -->
-                    <div class="campodebusca">
-                        <form method="post">
-                            <input type="text" name="pesquisa" id="pesquisar" placeholder="O que procura?" required>
-                            <button type="submit" id="lupa"> <img src="./img/Geral/Lupa.png"></button>
-                        </form>
-                    </div>
+                    <nav class="menu">
+                        <a href="index.html#Home" id="mn">Home</a>
+                        <a href="index.html#Sobre" id="mn">Sobre</a>
+                        <a href="index.html#Paginas" id="mn">Paginas</a>
+                        <a href="index.html#Contato" id="mn">Contato</a>
+                        <div class="usuario">
+                            <button class="us" id="cd">Cadastro</button>
+                            <button class="us" id="lg">Login</button>
+                        </div>                        
+                    </nav>                    
                 </div>
+                <div class="boxverde"></div>
             </div>
 
-            <div class="boxverde"></div>
+            
         </header>
     
         <main>
@@ -39,7 +43,7 @@
             <div class="titulo">
                 <h1>Caminhe para ser feliz</h1>
                 <figure>
-                    <img src="./img/Paginas/pg1.jpg" alt="">
+                    <img src="./img/Paginas/pg1.2.png" alt="">
                     <figcaption>Caminhe que faz bem...</figcaption>
                 </figure>                    
             </div>
@@ -104,6 +108,7 @@
 
         <footer>
             <!-- Imagens de silhuetas | Seção 5-->
+            <div class="Ancora"><a name="Contato"></a></div>
             <div class="boxsilhuetas">
                 <div class="silhuetas">
                     <img src="./img/Geral/Sil-1.png" alt="">
@@ -140,23 +145,19 @@
     
                 <!-- Redes Sociais -->
                 <div class="boxredes">
-                    <div class="redes">
-                        <img src="./img/Geral/Facebook.png">
+                    <div class="redes" id="RS1">
                         <a href="https://www.facebook.com/" target="_blank">SeVEn Facebook</a>
                     </div>
 
-                    <div class="redes">
-                        <img src="./img/Geral/Instagram.png">
+                    <div class="redes" id="RS2">
                         <a href="https://www.instagram.com/" target="_blank">SeVEn Instagram</a>
                     </div>
 
-                    <div class="redes">
-                        <img src="./img/Geral/Twitter.png">
+                    <div class="redes" id="RS3">
                         <a href="https://twitter.com/" target="_blank">SeVEn Twitter</a>
                     </div>
 
-                    <div class="redes">
-                        <img src="./img/Geral/Youtube.png">
+                    <div class="redes" id="RS4">
                         <a href="https://www.youtube.com/" target="_blank">SeVEn Youtube</a>
                     </div>  
                 </div>
@@ -190,6 +191,6 @@
             <div class="copy">
                 <h5>© 2022 Proz Educação | SeVEn Lives</h5>
             </div>
-        </footer>    
+        </footer>
     </body>
 </html>
